@@ -10,18 +10,6 @@
 ---
 
 
-<div align="center">
-  <img src="https://placeholder-for-screenshot.com/dark-mode.png" alt="Dark Mode" width="45%" />
-  <img src="https://placeholder-for-screenshot.com/light-mode.png" alt="Light Mode" width="45%" />
-</div>
-
-<div align="center">
-  <img src="https://placeholder-for-screenshot.com/code-preview.png" alt="Code Preview" width="45%" />
-  <img src="https://placeholder-for-screenshot.com/export-options.png" alt="Export Options" width="45%" />
-</div>
-
----
-
 ## ✨ Features
 
 ### Core Functionality
