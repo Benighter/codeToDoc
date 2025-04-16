@@ -45,3 +45,4 @@ dist
 .eslintcache
 .cache
 /.cache 
+.vercel

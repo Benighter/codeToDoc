@@ -1,87 +1,179 @@
 # codeToDoc
 
-A modern web application that converts code files to beautiful documents in various formats including PDF, Word, HTML, and plain text.
 
-## Features
+> Convert your code into beautiful, formatted documents with ease. codeToDoc transforms source code files into professional PDF documents, Word files, and more with syntax highlighting and customization options.
 
-- **Multiple Export Formats**: Convert your code to PDF, Word documents, HTML, or plain text
-- **Syntax Highlighting**: Beautiful syntax highlighting for over 20 programming languages
-- **Theme Options**: Choose from multiple syntax highlighting themes
-- **Document Customization**: Add titles, author information, and customize the appearance
-- **Drag & Drop Interface**: Simple and intuitive user interface
+## 📌 Live Demo
 
-## Getting Started
+🔗 [**Try codeToDoc Now!**](https://code-to-ovao2i6xu-benighters-projects.vercel.app) <!-- Deployed app URL -->
+
+---
+
+
+<div align="center">
+  <img src="https://placeholder-for-screenshot.com/dark-mode.png" alt="Dark Mode" width="45%" />
+  <img src="https://placeholder-for-screenshot.com/light-mode.png" alt="Light Mode" width="45%" />
+</div>
+
+<div align="center">
+  <img src="https://placeholder-for-screenshot.com/code-preview.png" alt="Code Preview" width="45%" />
+  <img src="https://placeholder-for-screenshot.com/export-options.png" alt="Export Options" width="45%" />
+</div>
+
+---
+
+## ✨ Features
+
+### Core Functionality
+- **Multiple Export Formats** - Convert code to PDF, DOCX, TXT, and HTML
+- **Syntax Highlighting** - Beautiful code highlighting for various programming languages
+- **Theme Selection** - Choose from multiple syntax highlighting themes:
+  - Atom Dark
+  - Material Light
+  - Dracula
+  - Solarized Light
+  - Tomorrow
+
+### User Experience
+- **Dark/Light Mode** - Toggle between dark and light UI themes
+- **Drag & Drop Interface** - Simply drag your code files to upload
+- **HTML Preview** - Live preview for HTML code
+- **Code Pasting** - Option to directly paste code instead of uploading
+- **Responsive Design** - Works perfectly on mobile, tablet, and desktop
+
+### Document Customization
+- **Document Metadata** - Add custom title and author information
+- **Line Numbers** - Option to include or exclude line numbers
+- **Font Size Adjustment** - Customize the size of code text
+- **Language Selection** - Specify the programming language for proper highlighting
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: React
+- **UI Components**: Material UI
+- **Syntax Highlighting**: react-syntax-highlighter (with Prism)
+- **PDF Generation**: jsPDF, html2canvas
+- **File Handling**: file-saver
+- **Styling**: CSS with Material UI theming
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (version 14 or higher)
-- npm (version 6 or higher)
+- Node.js (version 14.x or higher)
+- npm or yarn
 
 ### Installation
 
-1. Clone the repository or download the source code
-2. Navigate to the project directory
-3. Install dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Benighter/codeToDoc.git
+   cd codeToDoc
+   ```
 
-```bash
-npm install
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
+
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from create-react-app configuration
+
+---
+
+## 📖 How to Use
+
+### Converting a Code File
+
+1. **Upload Your Code**:
+   - Drag and drop your code file into the drop area
+   - OR click "Browse Files" to select a file from your computer
+   - OR click "Paste HTML Instead" to directly input code
+
+2. **Configure Document Settings**:
+   - Select the programming language
+   - Choose a syntax highlighting theme
+   - Set document title and author name
+   - Adjust font size and line number preferences
+
+3. **Preview Your Document**:
+   - Review how your code will look with the selected settings
+   - For HTML files, you can generate a rendered preview
+
+4. **Export the Document**:
+   - Select your desired export format (PDF, DOCX, TXT, HTML)
+   - Click the "Export" button
+   - Save the file to your computer
+
+### Tips for Best Results
+
+- For HTML documents, use the preview feature to see how the rendered page will look
+- Large files may take longer to process, especially when exporting to PDF
+- For optimal PDF quality, use code with reasonable line lengths
+- If you're experiencing performance issues, try reducing the font size or removing line numbers
+
+---
+
+## 🧩 Project Structure
+
+```
+codeToDoc/
+├── public/              # Static files
+├── src/                 # Source files
+│   ├── App.js           # Main application component
+│   ├── index.js         # Entry point
+│   ├── index.css        # Global styles
+│   └── reportWebVitals.js
+├── package.json         # Dependencies and scripts
+└── README.md            # Project documentation
 ```
 
-4. Start the development server:
+---
 
-```bash
-npm start
-```
+## 🛣️ Roadmap
 
-5. Open your browser and navigate to `http://localhost:3000`
+- [ ] Add code formatting options
+- [ ] Support for more export formats (Markdown, RTF)
+- [ ] Batch processing for multiple files
+- [ ] Code annotation features
+- [ ] Custom templates for different document types
+- [ ] Cloud storage integration
 
-## Usage
+---
 
-1. Drag and drop a code file onto the upload area or click "Browse Files" to select a file
-2. The application will automatically detect the language based on the file extension
-3. Customize the document settings:
-   - Document title
-   - Author name
-   - Programming language
-   - Syntax highlighting theme
-   - Export format
-4. Click "Export" to generate and download your document
+## 🤝 Contributing
 
-## Supported Languages
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-The application supports syntax highlighting for a wide range of programming languages, including:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- JavaScript/TypeScript
-- Python
-- Java
-- C/C++
-- C#
-- PHP
-- Ruby
-- Go
-- Rust
-- Swift
-- Kotlin
-- HTML/CSS
-- SQL
-- Bash
-- JSON/YAML
-- Markdown
-- And many more!
-
-## Building for Production
-
-To build the application for production, run:
-
-```bash
-npm run build
-```
-
-This will create an optimized production build in the `build` folder that you can deploy to any static hosting service.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
 
 ## 👤 Author
 Bennet Nkolele  
@@ -89,9 +181,21 @@ Bennet Nkolele
 - LinkedIn: [Bennet Nkolele](https://www.linkedin.com/in/bennet-nkolele-321285249/)  
 - Portfolio: [My Work](https://react-personal-portfolio-alpha.vercel.app/)
 
-## Acknowledgments
+---
 
-- Built with [React](https://reactjs.org/)
-- UI components from [Material-UI](https://mui.com/)
-- Syntax highlighting powered by [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
-- PDF generation using [jsPDF](https://github.com/MrRio/jsPDF) and [html2canvas](https://github.com/niklasvh/html2canvas)
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 🙏 Acknowledgements
+
+- [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) for the amazing syntax highlighting capabilities
+- [Material UI](https://mui.com/) for the beautiful UI components
+- [jsPDF](https://github.com/MrRio/jsPDF) for PDF generation functionality
+- Icons from [Material Icons](https://mui.com/material-ui/material-icons/)
+
+---
+
+💻 Built with ❤️ by [Bennet Nkolele](https://github.com/Benighter)

@@ -71,9 +71,11 @@ function App() {
   const [authorName, setAuthorName] = useState('');
   const [lineNumbers, setLineNumbers] = useState(true);
   const [fontSize, setFontSize] = useState(14);
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem('darkMode');
-    return savedMode ? JSON.parse(savedMode) : useMediaQuery('(prefers-color-scheme: dark)');
+    return savedMode ? JSON.parse(savedMode) : prefersDarkMode;
   });
   
   const codeRef = useRef(null);
